@@ -9,7 +9,9 @@ public class RestAPITest {
 	
 	@Test
 	public void Demo4() {
-		System.out.println("Demo 4");
+		System.out.println("Demo 4 A");
+		System.out.println("Demo 4 B");
+		System.out.println("Demo 4 C");
 	}
 	
 	@Test
