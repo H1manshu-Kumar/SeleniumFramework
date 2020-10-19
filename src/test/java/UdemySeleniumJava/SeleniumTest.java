@@ -9,6 +9,7 @@ public class SeleniumTest {
 	@Test
 	public void Demo7() {
 		System.out.println("Demo 7");
+		System.out.println("Web Automation Test");
 	}
 
 	@Test
