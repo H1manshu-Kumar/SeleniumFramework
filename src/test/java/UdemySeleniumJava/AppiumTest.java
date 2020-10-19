@@ -15,10 +15,5 @@ public class AppiumTest {
 		System.out.println("Demo 2");
 	}
 	
-	@Test
-	public void Demo3() {
-		System.out.println("Demo 3");
-	}
-	
 	
 }

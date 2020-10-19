@@ -17,5 +17,4 @@ public class RestAPITest {
 		System.out.println("Demo 6");
 	}
 	
-	
 }
