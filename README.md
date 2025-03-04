@@ -77,10 +77,3 @@ Contributions are welcome! Follow these steps:
 ## 📜 License
 
 This project is licensed under the [MIT License](LICENSE).
-
-## 📞 Contact
-
-- **Author:** H1manshu Kumar
-- **GitHub:** [@H1manshu-Kumar](https://github.com/H1manshu-Kumar)
-
-https\://github.com/H1manshu-Kumar/SeleniumFramework
