@@ -69,10 +69,10 @@ SeleniumFramework/
 
 Contributions are welcome! Follow these steps:
 
-1. Fork the repository
+1. Fork the repository.
 2. Create a new branch (`feature-branch`)
-3. Commit your changes
-4. Push to your fork & submit a Pull Request
+3. Commit your changes.
+4. Push to your fork & submit a Pull Request.
 
 ## 📜 License
 
