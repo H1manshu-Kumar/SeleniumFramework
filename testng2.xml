@@ -1,11 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test thread-count="5" name="Test">
-    <classes>
-      <class name="UdemySeleniumJava.SeleniumTest"/>
-      <class name="UdemySeleniumJava.AppiumTest"/>
-      <class name="UdemySeleniumJava.RestAPITest"/>
-    </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+<?xml version="1.0" encoding="UTF-8"?>  
+<!-- XML declaration: defines XML version and encoding type -->
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">  
+<!-- Declares that this XML file follows the TestNG DTD specification -->
+
+<suite name="Suite">  
+  <!-- Root element of the TestNG suite with the name "Suite" -->
+
+  <test thread-count="5" name="Test">  
+    <!-- Defines a test block named "Test" -->
+    <!-- thread-count="5" allows execution of up to 5 test methods in parallel -->
+
+    <classes>  
+      <!-- List of test classes that will be executed in this test block -->
+
+      <class name="UdemySeleniumJava.SeleniumTest"/>  
+      <!-- Executes all test methods inside SeleniumTest class -->
+
+      <class name="UdemySeleniumJava.AppiumTest"/>  
+      <!-- Executes all test methods inside AppiumTest class -->
+
+      <class name="UdemySeleniumJava.RestAPITest"/>  
+      <!-- Executes all test methods inside RestAPITest class -->
+
+    </classes>  
+    <!-- End of classes block -->
+
+  </test> <!-- End of Test block -->
+
+</suite> <!-- End of Suite block -->
