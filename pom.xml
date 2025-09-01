@@ -1,13 +1,27 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<!-- Root element of the Maven Project Object Model (POM) -->
+
 	<modelVersion>4.0.0</modelVersion>
+	<!-- POM model version, always 4.0.0 for modern Maven projects -->
+
 	<groupId>SeleniumJavaFrameworkUdemy</groupId>
+	<!-- Unique identifier for the project group (like package name in Java) -->
+
 	<artifactId>MavenProjectSelenium</artifactId>
+	<!-- Unique name for the project (the final JAR name will use this) -->
+
 	<version>0.0.1-SNAPSHOT</version>
+	<!-- Project version; SNAPSHOT means it’s under development -->
+
 	<profiles>
+		<!-- Profiles allow you to define different build/test configurations -->
+
 		<profile>
-		<id>Regression</id>
+			<id>Regression</id>
+			<!-- Profile ID: Run this for regression suite -->
+
 			<build>
 				<pluginManagement>
 					<plugins>
@@ -21,6 +35,8 @@
 								</suiteXmlFiles>
 							</configuration>
 						</plugin>
+						<!-- Surefire plugin runs TestNG suite (testng2.xml) for regression -->
+
 						<plugin>
 							<groupId>org.apache.maven.plugins</groupId>
 							<artifactId>maven-compiler-plugin</artifactId>
@@ -29,13 +45,16 @@
 								<target>1.6</target>
 							</configuration>
 						</plugin>
+						<!-- Compiler plugin ensures Java source/target compatibility (Java 1.6 here) -->
 					</plugins>
-
 				</pluginManagement>
 			</build>
 		</profile>
+
 		<profile>
 			<id>Smoke</id>
+			<!-- Profile ID: Run this for smoke suite -->
+
 			<build>
 				<pluginManagement>
 					<plugins>
@@ -49,6 +68,8 @@
 								</suiteXmlFiles>
 							</configuration>
 						</plugin>
+						<!-- Surefire plugin runs TestNG suite (testng.xml) for smoke tests -->
+
 						<plugin>
 							<groupId>org.apache.maven.plugins</groupId>
 							<artifactId>maven-compiler-plugin</artifactId>
@@ -57,6 +78,7 @@
 								<target>1.6</target>
 							</configuration>
 						</plugin>
+						<!-- Same Java compiler configuration as regression -->
 					</plugins>
 				</pluginManagement>
 			</build>
@@ -64,27 +86,36 @@
 	</profiles>
 
 	<dependencies>
+		<!-- All required libraries for Selenium, TestNG, API Testing, and Appium -->
+
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
 			<version>3.141.59</version>
 		</dependency>
+		<!-- Selenium WebDriver library for browser automation -->
+
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>7.3.0</version>			
 		</dependency>
+		<!-- TestNG framework for test execution -->
+
 		<dependency>
 			<groupId>io.rest-assured</groupId>
 			<artifactId>rest-assured</artifactId>
 			<version>4.3.1</version>
 			<scope>test</scope>
 		</dependency>
+		<!-- Rest-Assured library for API testing (only in test scope) -->
+
 		<dependency>
 			<groupId>io.appium</groupId>
 			<artifactId>java-client</artifactId>
 			<version>7.3.0</version>
 		</dependency>
+		<!-- Appium Java client for mobile automation -->
 	</dependencies>
 
 </project>
