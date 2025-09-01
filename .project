@@ -1,23 +1,44 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<projectDescription>
-	<name>SeleniumFramework</name>
-	<comment></comment>
-	<projects>
+<?xml version="1.0" encoding="UTF-8"?>  
+<!-- XML declaration: version and encoding -->
+
+<projectDescription>  
+	<!-- Root element describing the Eclipse project -->
+
+	<name>SeleniumFramework</name>  
+	<!-- Project name as it appears in Eclipse workspace -->
+
+	<comment></comment>  
+	<!-- Optional description or notes about the project (currently empty) -->
+
+	<projects>  
+		<!-- References to other dependent projects (none added here) -->
 	</projects>
-	<buildSpec>
+
+	<buildSpec>  
+		<!-- Defines build commands (builders) used when the project is built -->
+
 		<buildCommand>
 			<name>org.eclipse.jdt.core.javabuilder</name>
 			<arguments>
 			</arguments>
 		</buildCommand>
+		<!-- Java builder: Compiles Java code whenever changes are made -->
+
 		<buildCommand>
 			<name>org.eclipse.m2e.core.maven2Builder</name>
 			<arguments>
 			</arguments>
 		</buildCommand>
+		<!-- Maven builder: Integrates Maven with Eclipse, handles dependency resolution and project build -->
 	</buildSpec>
-	<natures>
-		<nature>org.eclipse.jdt.core.javanature</nature>
-		<nature>org.eclipse.m2e.core.maven2Nature</nature>
+
+	<natures>  
+		<!-- Defines project type(s) / capabilities -->
+
+		<nature>org.eclipse.jdt.core.javanature</nature>  
+		<!-- Marks this project as a Java project in Eclipse -->
+
+		<nature>org.eclipse.m2e.core.maven2Nature</nature>  
+		<!-- Marks this project as a Maven project (using m2e plugin in Eclipse) -->
 	</natures>
 </projectDescription>
