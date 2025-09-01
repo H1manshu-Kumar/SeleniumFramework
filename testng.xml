@@ -1,11 +1,28 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-	<test thread-count="5" name="Test">
-		<classes>
-			<class name="UdemySeleniumJava.AppiumTest" />
-			<class name="UdemySeleniumJava.RestAPITest" />
-			<!-- <class name="UdemySeleniumJava.SeleniumTest" /> -->
-		</classes>
-	</test> <!-- Test -->
-</suite> <!-- Suite -->
+<?xml version="1.0" encoding="UTF-8"?>  
+<!-- XML declaration specifying version and encoding -->
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">  
+<!-- Defines that this file follows TestNG suite DTD format -->
+
+<suite name="Suite">  
+    <!-- Root element of TestNG suite with the name "Suite" -->
+
+	<test thread-count="5" name="Test">  
+	    <!-- Defines a test block with name "Test" that can run up to 5 threads in parallel -->
+
+		<classes>  
+		    <!-- Group of test classes that will be executed under this test block -->
+
+			<class name="UdemySeleniumJava.AppiumTest" />  
+			<!-- Executes the AppiumTest class -->
+
+			<class name="UdemySeleniumJava.RestAPITest" />  
+			<!-- Executes the RestAPITest class -->
+
+			<!-- <class name="UdemySeleniumJava.SeleniumTest" /> -->  
+			<!-- SeleniumTest class is currently commented out, so it won’t be executed -->
+
+		</classes>  
+	</test> <!-- Test block ends here -->
+
+</suite> <!-- Suite block ends here -->
